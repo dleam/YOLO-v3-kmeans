@@ -4,7 +4,7 @@ import numpy as np
 class YOLO_Kmeans:
 
     def __init__(self, cluster_number, filename):
-        self.cluster_number = 9
+        self.cluster_number = cluster_number
         self.filename = "2012_train.txt"
 
     def iou(self, boxes, clusters):  # 1 box -> k clusters
